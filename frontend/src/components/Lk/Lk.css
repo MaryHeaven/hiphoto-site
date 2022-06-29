@@ -1,0 +1,12 @@
+.lkpage {
+  display: flex;
+  justify-content: center;
+}
+
+.cardlk {
+  width: 960px;
+  min-height: 760px;
+}
+
+
+

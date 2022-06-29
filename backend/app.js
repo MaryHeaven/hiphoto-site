@@ -1,16 +1,18 @@
 const express = require('express');
 const config = require('./config/index');
 const { sequelize } = require('./db/models/index');
+// const emailRouter = require('./routes/email.routes');
 
 // require routes
-const homeRouter = require('./routes/home.routes');
+// const homeRouter = require('./routes/home.routes');
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 config(app);
 
 // routes use
-app.use('/', homeRouter);
+// app.use('/', homeRouter);
+// app.use('/api/email', emailRouter);
 
 app.listen(PORT, async () => {
   console.log(`S E R V E R S T A R T E D A T ${PORT} P O R T`);
