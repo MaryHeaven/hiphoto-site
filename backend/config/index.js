@@ -1,6 +1,6 @@
 require('dotenv').config();
-require('@babel/register');
 const express = require('express');
+const nodemailer = require('./nodemailer');
 const cors = require('cors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
